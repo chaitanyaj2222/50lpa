@@ -1,12 +1,8 @@
 function threeSum(inputArr) {
-    if (inputArr.length === 3) {
-        let sum = inputArr[0] + inputArr[1] + inputArr[2]
-        if (sum === 0) return [inputArr]
-    }
-    let arr = inputArr.sort((x, y) => x - y);
+    let arr = [...inputArr].sort((x, y) => x - y);
     let trips = []
-    for (let i = 0; i < arr.length - 3; i++) {
-        if (i > 0 && arr[i] == arr[i - 1]) {
+    for (let i = 0; i <= arr.length - 3; i++) {
+        if (i > 0 && arr[i] === arr[i - 1]) {
             continue
         }
 
@@ -14,12 +10,12 @@ function threeSum(inputArr) {
         let r = arr.length - 1;
         let target = -(arr[i])
         while (r > l) {
-            if (r < arr.length - 1 & arr[r] == arr[r + 1]) {
+            if (r < arr.length - 1 && arr[r] === arr[r + 1]) {
 
                 r--;
                 continue
             }
-            if (l > i + 1 && arr[l] == arr[l - 1]) {
+            if (l > i + 1 && arr[l] === arr[l - 1]) {
 
                 l++;
                 continue
