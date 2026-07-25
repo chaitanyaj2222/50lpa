@@ -1,0 +1,23 @@
+{
+  "name": "50lpa",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/chaitanyaj2222/50lpa#readme",
+  "bugs": {
+    "url": "https://github.com/chaitanyaj2222/50lpa/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chaitanyaj2222/50lpa.git"
+  },
+  "license": "ISC",
+  "author": "chaitanyaj2222",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "datastructures-js": "^13.0.0"
+  }
+}
