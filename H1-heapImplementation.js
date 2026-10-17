@@ -15,7 +15,7 @@ class MinHeap {
   size() {
     return this.heap.length;
   }
-
+  
   bubbleUp() {
     let insertedElementIndex = this.heap.length - 1;
 
